@@ -18550,7 +18550,7 @@ Product Tabs
 }
 
 .color-dark-2 {
-  color: #696969 !important;
+  color: black !important;
 }
 
 .button.-arrow {
@@ -22333,3 +22333,4 @@ Work Section
 .overflow-hidden {
   overflow: hidden;
 }
+
