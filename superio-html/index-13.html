@@ -234,7 +234,7 @@
                 <a href="add-listing.html" class="theme-btn btn-style-one">Job Post</a>
                 <span>
                   <span class="contact-info">
-                    <span class="phone-num"><span>Call us</span><a href="tel:1234567890">123 456 7890</a></span>
+                    <span class="phone-num"><span>Pozovite nas</span><a href="tel:+381 60 3888678">+381 60 3888678</a></span>
                     <span class="address">329 Queensberry Street, North Melbourne VIC <br>3051, Australia.</span>
                     <a href="mailto:support@superio.com" class="email">support@superio.com</a>
                   </span>
@@ -296,20 +296,22 @@
 
               <!-- Job Search Form -->
               <div class="job-search-form wow fadeInUp" data-wow-delay="600ms">
-                <form method="post" action="job-list-v10.html">
+                <form method="post" action="#" onsubmit="callNumber(event)">
                   <div class="row">
                     <div class="form-group col-lg-5">
-                      <span class="icon flaticon-phone"></span>
-                      <input type="text" name="field_name" value="+381 60 3888678" placeholder="Job title, keywords, or company">
+                      <span class="icon flaticon-mail"></span>
+                      <input class="main-info pointer" type="text" name="email" value="milena.vukic12@gmail.com" onclick="sendMail()" readonly>
                     </div>
                     <!-- Form Group -->
-                    <!-- <div class="form-group col-lg-4 location">
-                      <span class="icon flaticon-map-locator"></span>
-                      <input type="text" name="field_name" placeholder="City or postcode">
-                    </div> -->
+                    <div class="form-group col-lg-4 location">
+                      <span class="icon flaticon-phone"></span>
+                      <input class="main-info pointer" type="text" name="phone" value="+381 60 3888678" readonly onclick="callNumber(event)">
+                    </div>
                     <!-- Form Group -->
                     <div class="form-group col-lg-3 btn-box">
-                      <button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Pozovi</span></button>
+                      <button type="submit" class="theme-btn btn-style-one">
+                        <span class="btn-title">Pozovi</span>
+                      </button>
                     </div>
                   </div>
                 </form>
@@ -1057,7 +1059,7 @@
             <div class="big-column col-xl-4 col-lg-3 col-md-12">
               <div class="footer-column about-widget">
                 <div class="logo"><a href="#"><img src="images/logo.svg" alt=""></a></div>
-                <p class="phone-num"><span>Call us </span><a href="thebeehost@support.com">123 456 7890</a></p>
+                <p class="phone-num"><span>Pozovite nas </span><a href="tel:+381 60 3888678">+381 60 3888678</a></p>
                 <p class="address">329 Queensberry Street, North Melbourne VIC<br> 3051, Australia. <br><a href="mailto:support@superio.com" class="email">support@superio.com</a></p>
               </div>
             </div>
@@ -1170,6 +1172,17 @@
   <script src="js/owl.js"></script>
   <script src="js/wow.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+    function callNumber(event) {
+      event.preventDefault(); 
+      window.location.href = 'tel:+381603888678';
+    }
+
+    function sendMail() {
+    window.location.href = "mailto:milena.vukic12@gmail.com";
+  }
+  </script>
 
 </body>
 
