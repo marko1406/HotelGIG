@@ -2355,3 +2355,17 @@
 .pointer {
   cursor: pointer;
 }
+
+.how-it-works-btn {
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  color: white !important;
+  background-color: #3642ad;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 8px;
+  font-weight: 400;
+  padding: 18px 35px 15px 35px;
+  font-size: 18px !important;
+}

@@ -254,8 +254,8 @@
         <div class="outer-box">
           <!-- Login/Register -->
           <div class="btn-box">
-            <!-- <a href="login-popup.html" class="theme-btn btn-style-three btn-white-10 call-modal">Login / Register</a> -->
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScqapQ9MiWltbDU287EWbKQiW3zw84nCrMm5gtCSZxf4SNa_w/viewform?usp=header" class="theme-btn btn-style-one btn-white"><span class="btn-title">Registruj se</span></a>
+            <a onclick="scrollDown(event)" class="theme-btn btn-style-three btn-white-10 call-modal">Kako funkcionišemo</a>
+            <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScqapQ9MiWltbDU287EWbKQiW3zw84nCrMm5gtCSZxf4SNa_w/viewform?usp=header" class="theme-btn btn-style-one btn-white"><span class="btn-title">Registruj se</span></a> -->
           </div>
         </div>
       </div>
@@ -270,10 +270,10 @@
           <div class="outer-box">
             <!-- Login/Register -->
             <div class="login-box">
-              <a href="login-popup.html" class="call-modal"><span class="icon-user"></span></a>
+              <a onclick="scrollDown(event)" class="call-modal how-it-works-btn"><span class="icon-business">Kako funkcioniše</span></a>
             </div>
 
-            <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"><span class="flaticon-menu-1"></span></a>
+            <!-- <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"><span class="flaticon-menu-1"></span></a> -->
           </div>
         </div>
       </div>
@@ -456,7 +456,7 @@
     <!-- End Job Categories -->
 
     <!-- Work Section -->
-    <section class="layout-pt-60 layout-pb-60">
+    <section class="layout-pt-60 layout-pb-60" id="platform-logic">
       <div class="auto-container">
         <div class="row justify-content-center">
           <div class="col-lg-5">
@@ -1180,8 +1180,19 @@
     }
 
     function sendMail() {
-    window.location.href = "mailto:milena.vukic12@gmail.com";
-  }
+      window.location.href = "mailto:milena.vukic12@gmail.com";
+    }
+
+    function scrollDown() {
+      const e = document.getElementById('platform-logic');
+      const offset = 100; // Offset u pikselima
+      const elementPosition = e.getBoundingClientRect().top + window.scrollY;
+      
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth',
+      });
+    }
   </script>
 
 </body>
