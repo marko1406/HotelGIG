@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Hotel GIG</title>
+  <title>Hotel GIG - Platforma za jednokratno angažovanje radnika u ugostiteljstvu</title>
 
   <!-- Stylesheets -->
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
 
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
   <!-- Responsive -->
@@ -34,7 +34,7 @@
         <!--Nav Outer -->
         <div class="nav-outer">
           <div class="logo-box">
-            <div class="logo"><a href="index.html"><img src="images/logo-2.svg" alt="" title=""></a></div>
+            <div id="logo-header" class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""> Hotel GIG</a></div>
           </div>
 
           <nav class="nav main-menu">
@@ -262,7 +262,7 @@
 
       <!-- Mobile Header -->
       <div class="mobile-header">
-        <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="" title=""></a></div>
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title="" style="width: 40px;">Hotel GIG</a></div>
 
         <!--Nav Box-->
         <div class="nav-outer clearfix">
@@ -270,7 +270,7 @@
           <div class="outer-box">
             <!-- Login/Register -->
             <div class="login-box">
-              <a onclick="scrollDown(event)" class="call-modal how-it-works-btn"><span class="icon-business">Kako funkcioniše</span></a>
+              <a onclick="scrollDown(event)" class="call-modal how-it-works-btn"><span class="icon-business">Kako funkcionišemo</span></a>
             </div>
 
             <!-- <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"><span class="flaticon-menu-1"></span></a> -->
@@ -300,7 +300,7 @@
                   <div class="row">
                     <div class="form-group col-lg-5">
                       <span class="icon flaticon-mail"></span>
-                      <input class="main-info pointer" type="text" name="email" value="milena.vukic12@gmail.com" onclick="sendMail()" readonly>
+                      <input class="main-info pointer" type="text" name="email" value="hotelgigapp@gmail.com" onclick="sendMail()" readonly>
                     </div>
                     <!-- Form Group -->
                     <div class="form-group col-lg-4 location">
@@ -343,7 +343,7 @@
 
           <div class="image-column col-lg-5 col-md-12">
             <div class="image-box">
-              <figure class="main-image wow fadeIn anm" data-wow-delay="1200ms" data-speed-x="2"><img src="images/index/header/photopea3.png" alt=""></figure>
+              <!-- <figure class="main-image wow fadeIn anm" data-wow-delay="1200ms" data-speed-x="2"><img src="images/index/header/photopea3.png" alt=""></figure> -->
             </div>
           </div>
         </div>
@@ -715,7 +715,7 @@
               <div class="content">
                 <h3>Organizatori</h3>
                 <p>Znate šta želite? Savršeno! Recite nam broj konobara i trajanje angažmana, a mi ćemo vam u rekordnom roku obezbediti stručan i pouzdan tim. Vi se fokusirajte na svoj događaj, mi ćemo se pobrinuti za sve ostalo!</p>
-                <a href="#" class="theme-btn btn-style-five" onclick="callNumber(event)">Pozovite nas</a>
+                <a href="https://forms.gle/cqmSWJacHhZEhRxz6" class="theme-btn btn-style-five">Registrujte se</a>
               </div>
               <figure class="image"><img src="images/resource/employ.png" alt="" style="transform: scaleX(-1); margin-right: 10px;"></figure>
             </div>
@@ -727,7 +727,7 @@
               <div class="content">
                 <h3 class="color-dark-1">Kandidati</h3>
                 <p class="color-dark-2">Ako ste pouzdani, profesionalni i puni entuzijazma, ovo je prilika za vas! Pridružite se timu konobara koji pružaju vrhunsku uslugu na raznovrsnim događajima i doprinesite stvaranju nezaboravnih iskustava.</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScqapQ9MiWltbDU287EWbKQiW3zw84nCrMm5gtCSZxf4SNa_w/viewform?usp=header" class="theme-btn btn-style-five color-dark-1">Registrujte se</a>
+                <a href="https://forms.gle/po6PkTYYCpJMYR2A8" class="theme-btn btn-style-five color-dark-1">Registrujte se</a>
               </div>
               <figure class="image"><img src="images/resource/candidate.png" alt=""></figure>
             </div>
@@ -1058,10 +1058,10 @@
           <div class="row">
             <div class="big-column col-xl-4 col-lg-3 col-md-12">
               <div class="footer-column about-widget">
-                <div class="logo"><a href="#"><img src="images/logo.svg" alt=""></a></div>
+                <div class="logo"><a href="#"><img src="images/logo.png" alt="" style="width: 100px; margin-left: -5px;"></a></div>
                 <p class="phone-num"><span>Pozovite nas </span><a href="tel:+381 60 3888678">+381 60 3888678</a></p>
                 <p class="address">Jug Bogdanova 28
-                  11000 Beograd. <br><a href="mailto:support@superio.com" class="email">milena.vukic12@gmail.com</a></p>
+                  11000 Beograd. <br><a href="mailto:support@superio.com" class="email">hotelgigapp@gmail.com</a></p>
               </div>
             </div>
 
@@ -1181,7 +1181,7 @@
     }
 
     function sendMail() {
-      window.location.href = "mailto:milena.vukic12@gmail.com";
+      window.location.href = "mailto:hotelgigapp@gmail.com";
     }
 
     function scrollDown() {
