@@ -299,18 +299,18 @@
                 <form method="post" action="#" onsubmit="callNumber(event)">
                   <div class="row">
                     <div class="form-group col-lg-5">
-                      <span class="icon flaticon-mail"></span>
-                      <input class="main-info pointer" type="text" name="email" value="hotelgigapp@gmail.com" onclick="sendMail()" readonly>
+                      <span class="icon flaticon-worldwide"></span>
+                      <input class="main-info pointer" type="text" name="email" value="Postanite deo zajednice!" onclick="registerForms(event)" readonly>
                     </div>
                     <!-- Form Group -->
                     <div class="form-group col-lg-4 location">
-                      <span class="icon flaticon-phone"></span>
-                      <input class="main-info pointer" type="text" name="phone" value="+381 60 3888678" readonly onclick="callNumber(event)">
+                      <span class="icon flaticon-mail"></span>
+                      <input class="main-info pointer" type="text" name="phone" value="Kontaktirajte nas" readonly onclick="sendMail()">
                     </div>
                     <!-- Form Group -->
                     <div class="form-group col-lg-3 btn-box">
-                      <button type="submit" class="theme-btn btn-style-one">
-                        <span class="btn-title">Pozovi</span>
+                      <button type="submit" class="theme-btn btn-style-one" sty>
+                        <span class="btn-title">Registruj se! 🚀</span>
                       </button>
                     </div>
                   </div>
@@ -336,7 +336,7 @@
                   <span class="title">100+ Kandidata</span>
                   <img src="images/resource/multi-peoples.png" alt="">
                 </div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScqapQ9MiWltbDU287EWbKQiW3zw84nCrMm5gtCSZxf4SNa_w/viewform?usp=header" class="upload-cv"><span class="icon flaticon-file"></span> Preporučite radnika</a>
+                <a href="https://forms.gle/po6PkTYYCpJMYR2A8" class="upload-cv"><span class="icon flaticon-file"></span> Preporučite radnika</a>
               </div>
             </div>
           </div>
@@ -706,7 +706,7 @@
     <!-- End Job Section -->
 
     <!-- Registeration Banners -->
-    <section class="layout-pt-60 layout-pb-60">
+    <section class="layout-pt-60 layout-pb-60" id="platform-registration">
       <div class="auto-container">
         <div class="row wow fadeInUp">
           <!-- Banner Style One -->
@@ -1187,6 +1187,17 @@
     function scrollDown() {
       const e = document.getElementById('platform-logic');
       const offset = 100; // Offset u pikselima
+      const elementPosition = e.getBoundingClientRect().top + window.scrollY;
+      
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth',
+      });
+    }
+
+    function registerForms() {
+      const e = document.getElementById('platform-registration');
+      const offset = 130; // Offset u pikselima
       const elementPosition = e.getBoundingClientRect().top + window.scrollY;
       
       window.scrollTo({
