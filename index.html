@@ -296,11 +296,11 @@
 
               <!-- Job Search Form -->
               <div class="job-search-form wow fadeInUp" data-wow-delay="600ms">
-                <form method="post" action="#" onsubmit="callNumber(event)">
+                <form>
                   <div class="row">
                     <div class="form-group col-lg-5">
                       <span class="icon flaticon-worldwide"></span>
-                      <input class="main-info pointer" type="text" name="email" value="Postanite deo zajednice!" onclick="registerForms(event)" readonly>
+                      <input class="main-info pointer" type="text" name="email" value="Postanite deo zajednice!" onclick="scrollDown(event)" readonly>
                     </div>
                     <!-- Form Group -->
                     <div class="form-group col-lg-4 location">
@@ -309,7 +309,7 @@
                     </div>
                     <!-- Form Group -->
                     <div class="form-group col-lg-3 btn-box">
-                      <button type="submit" class="theme-btn btn-style-one" sty>
+                      <button type="submit" class="theme-btn btn-style-one" onclick="registerForms(event)">
                         <span class="btn-title">Registruj se! 🚀</span>
                       </button>
                     </div>
