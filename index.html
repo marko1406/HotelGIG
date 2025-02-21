@@ -395,9 +395,8 @@
     function moreDetails(event) {
       event.preventDefault(); 
       window.dispatchEvent(new CustomEvent('message', 
-      { data: { 
+      { detail: { 
         id: 'lena-ai',
-        secure: true,
         chatOpen: true,
       }}
       ));
