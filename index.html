@@ -114,7 +114,7 @@
                     </div>
                     <!-- Form Group -->
                     <div class="form-group col-lg-3 btn-box">
-                      <button type="submit" class="theme-btn btn-style-one" onclick="moreDetals(event)">
+                      <button class="theme-btn btn-style-one" onclick="moreDetails(event)">
                         <span class="btn-title">Saznaj više! 🚀</span>
                       </button>
                     </div>
@@ -363,11 +363,13 @@
       window.location.href = 'tel:+381603888678';
     }
 
-    function sendMail() {
+    function sendMail(event) {
+      event.preventDefault(); 
       window.location.href = "mailto:hotelgigapp@gmail.com";
     }
 
-    function scrollDown() {
+    function scrollDown(event) {
+      event.preventDefault(); 
       const e = document.getElementById('platform-logic');
       const offset = 100; // Offset u pikselima
       const elementPosition = e.getBoundingClientRect().top + window.scrollY;
@@ -378,7 +380,8 @@
       });
     }
 
-    function registerForms() {
+    function registerForms(event) {
+      event.preventDefault(); 
       const e = document.getElementById('platform-registration');
       const offset = 130; // Offset u pikselima
       const elementPosition = e.getBoundingClientRect().top + window.scrollY;
@@ -389,7 +392,8 @@
       });
     }
 
-    function moreDetails() {
+    function moreDetails(event) {
+      event.preventDefault(); 
     const e = document.getElementById('lena-ai-chat');
     if (e) {
       let src = e.src;
