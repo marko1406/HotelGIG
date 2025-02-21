@@ -395,11 +395,13 @@
     function moreDetails(event) {
       event.preventDefault(); 
       window.dispatchEvent(new CustomEvent('message', 
-      { detail: { 
-        id: 'lena-ai',
-        chatOpen: true,
-      }}
-      ));
+      { 
+        detail: { 
+          id: 'lena-ai',
+          chatOpen: true,
+        }
+      }
+    ));
 }
 
   </script>
