@@ -394,17 +394,13 @@
 
     function moreDetails(event) {
       event.preventDefault(); 
-    const e = document.getElementById('lena-ai-chat');
-    if (e) {
-      let src = e.src;
-      src = src.replace(/([?&])open=true(&?)/, '$1').replace(/([?&])$/, '');
-      if (src.includes('?')) {
-        src += '&open=true';
-      } else {
-        src += '?open=true';
-      }
-      e.src = src;
-    }
+      window.dispatchEvent(new CustomEvent('message', 
+      { data: { 
+        id: 'lena-ai',
+        secure: true,
+        chatOpen: true,
+      }}
+      ));
 }
 
   </script>
