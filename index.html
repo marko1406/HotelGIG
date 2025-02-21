@@ -19,7 +19,7 @@
 </head>
 
 <body data-anm=".anm">
-  <iframe id="lena-ai-chat" src="https://smartlena.com/sr/caskanje?companyId=ef1edd16-0feb-4053-b7df-ba1747a6b43f"></iframe>
+  <iframe id="lena-ai-chat" src="https://stg.smartlena.com/sr/caskanje?companyId=c017e346-6d37-4c72-a016-95b075228763"></iframe>
 
   <div class="page-wrapper">
 
@@ -394,15 +394,16 @@
 
     function moreDetails(event) {
       event.preventDefault(); 
-      window.dispatchEvent(new CustomEvent('message', 
-      { 
-        detail: { 
-          id: 'lena-ai',
-          chatOpen: true,
-        }
+      var lenaChatFrame = document.getElementById("lena-ai-chat");
+
+      if (lenaChatFrame) {
+        lenaChatFrame.contentWindow.postMessage(
+          { action: "openChat" }, 
+          "https://stg.smartlena.com"
+        );
       }
-    ));
-}
+    }
+
 
   </script>
   <script type="module">
